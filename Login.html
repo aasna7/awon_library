@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      input[type="text"] {
+        border-radius: 4px;
+        width: 20%;
+        height: 30px;
+        margin-top: 50px;
+        margin-bottom: 10px;
+        text-align: center;
+        font-family: Montserrat, sans-serif;
+      }
+
+      input[type="password"] {
+        border-radius: 4px;
+        width: 20%;
+        height: 30px;
+        margin-bottom: 10px;
+        text-align: center;
+        font-family: Montserrat, sans-serif;
+      }
+
+      #content {
+        border: 1px solid black;
+        background-color: darkgray;
+
+        margin: 100px 150px;
+      }
+
+      #login {
+        width: 20%;
+        height: 30px;
+        background-color: #7691bc;
+        border-radius: 4px;
+        font-family: Montserrat, sans-serif;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+
+      #reqmem {
+        width: 15%;
+        height: 30px;
+        background-color: #7691bc;
+        border-radius: 4px;
+        font-family: Montserrat, sans-serif;
+        font-weight: bold;
+        margin-top: 10px;
+      }
+
+      .form-popup {
+        display: none;
+        position: fixed;
+        bottom: 0;
+        right: 15px;
+        border: 3px solid #f1f1f1;
+        z-index: 9;
+      }
+
+      /* Add styles to the form container */
+      .form-container {
+        max-width: 300px;
+        padding: 10px;
+        background-color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="form-popup" id="myForm">
+      <form align="center" class="form-container">
+        <input type="text" placeholder="Username" id="username" />
+        <br />
+        <input type="password" placeholder="Password" id="password" />
+        <br />
+        <button id="login">Login</button>
+        <br />
+        <label style=" font-family: Montserrat, sans-serif;margin-bottom: 10px;"
+          >Not yet a member?</label
+        >
+        <br />
+        <button id="reqmem">Request Membership</button>
+      </form>
+    </div>
+  </body>
+</html>
