@@ -1,4 +1,4 @@
-﻿<html>
+<html>
     <head lang="en">
         <title>RotaryAwonlibrary</title>
         <meta charset="utf-8">
@@ -6,7 +6,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-  <link rel = "stylesheet" type = "text/css" href = "Home.css" />
+  <link rel = "stylesheet" type = "text/css" href = "home.css" />
   <style>
       .container {
         padding: 150px 120px;
@@ -140,7 +140,7 @@
                     
                         <div class="item active">
                                 
-                          <img src="Book.jpg" alt="Los Angeles" style="width:100%;">
+                          <img src="Book.jpg" alt="Los Angeles" style="width:100%;" style="height:100%;">
                           <div class="carousel-caption">
           
                           </div>
@@ -150,21 +150,19 @@
                     <div class="search-wrapper">
                         <input type="search" placeholder=""> </div>
                       <button class="btn">Search</button>
-                    
-                        <div class="dropdown">
-                            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Select
-                            <span class="caret"></span></button>
-                            <ul class="dropdown-menu">
-                              <li><a href="#">Author</a></li>
-                              <li><a href="#">Publication</a></li>
-                              <li><a href="#">Book Title</a></li>
-                              <li><a href="#">Category</a></li>
-                            </ul>
-                          </div>
+                      <div>
+                      <select class="browser-default custom-select">
+                        <option selected>Select</option>
+                        <option value="1">Author</option>
+                        <option value="2">Publication</option>
+                        <option value="3">Book Title</option>
+                        <option value="3">Category</option>
+                      </select>
+                      </div>
                     
                         <div class="item">
                                 
-                          <img src="books.jpg" alt="Chicago" style="width:100%;">
+                          <img src="books.jpg" alt="Chicago" style="width:100%;"style="height:100%;">
                           <div class="carousel-caption">
                             
                           </div>
@@ -174,21 +172,11 @@
                     <div class="search-wrapper">
                         <input type="search" placeholder=""> </div>
                       <button class="btn">Search</button>
-                    
-                        <div class="dropdown">
-                            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Select
-                            <span class="caret"></span></button>
-                            <ul class="dropdown-menu">
-                              <li><a href="#">Author</a></li>
-                              <li><a href="#">Publication</a></li>
-                              <li><a href="#">Book Title</a></li>
-                              <li><a href="#">Category</a></li>
-                            </ul>
-                          </div>
+                          
                       
                         <div class="item">
                                
-                          <img src="booked.jpg" alt="New York" style="width:100%;">
+                          <img src="booked.jpg" alt="New York" style="width:100%;"style="height:100%;">
                           <div class="carousel-caption">
                            
                           </div>
@@ -198,17 +186,7 @@
                     <div class="search-wrapper">
                         <input type="search" placeholder=""> </div>
                       <button class="btn">Search</button>
-                    
-                        <div class="dropdown">
-                            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Select
-                            <span class="caret"></span></button>
-                            <ul class="dropdown-menu">
-                              <li><a href="#">Author</a></li>
-                              <li><a href="#">Publication</a></li>
-                              <li><a href="#">Book Title</a></li>
-                              <li><a href="#">Category</a></li>
-                            </ul>
-                          </div>
+                      
                           <!-- Left and right controls -->
   <a class="left carousel-control" href="#myCarousel" data-slide="prev">
       <span class="glyphicon glyphicon-chevron-left"></span>
@@ -218,11 +196,19 @@
       <span class="glyphicon glyphicon-chevron-right"></span>
       <span class="sr-only">Next</span>
     </a>
+    
+
                   </div>
                   </div>
                   </div>
-                  <div class="container"></div>
-                  <button type="button" class="btn btn-info">Recent News</button>
+                  <div class="container1" id ="news">
+                    <h1> Recent News</h1>
+                    <p> The scope of counterfeiting across Amazon goes far beyond books. E-commerce has taken counterfeit goods from flea markets to the mainstream, and Amazon is by far the e-commerce heavyweight. But books offer a way to see the depths of the issue.
+
+                        “Being a tech monopoly means you don’t have to care about quality,” said Bill Pollock, a San Francisco publisher who has dealt with fake versions of his firm’s computer books on Amazon. </p>
+                   <button type="button" class="btn btn-link"> See More </button>    
+                  </div>
+                
                   
                   <!-- Footer -->
 <footer class="page-footer font-small blue">
