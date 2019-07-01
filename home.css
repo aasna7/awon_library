@@ -4,6 +4,7 @@
     margin-top: -5%;
   
   
+  
 
     
   }
@@ -13,7 +14,7 @@
     left: 25%;
     transform: translate(-50%, -50%);
     font-family:'Impact';
-  color: #19036E;
+    color: #19036E;
     font-size: 36;
   }
   .top-left {
@@ -61,7 +62,7 @@
   .container .btn:hover {
     background-color: #E9E8E8;
   }
-.dropdown
+.container.browser-default .custom-select
 {
   position: absolute;
     transform: translate(-50%, -50%);
@@ -76,17 +77,29 @@
     text-align: center;
     width: 12%;
     height:5%;
-  top: 47%;
-  left:56%
+  top:70%;
+  left:58%;
   
 
 }
- .container .btn btn-info
+ 
+
+    .container1.btn .btn-link
   {
-    
-    width: 6%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    top: 60%;
+    left: 55%;
+    background-color:#E9E8E8;
+    color: black;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    width: 9%;
     height:5%;
-    top: 100%;
-    left:40%;
 
   }

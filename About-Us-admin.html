@@ -7,6 +7,7 @@
     <title>Document</title>
     <link href="css/bootstrap.min.css" rel="stylesheet" />
     <script src="js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <link
       href="https://cdn.jsdelivr.net/npm/froala-editor@3.0.0/css/froala_editor.pkgd.min.css"
       rel="stylesheet"
@@ -235,6 +236,7 @@
               <img
                 src="Images/IMG_0735-1-e1511040507716.jpg"
                 style="width:100%; height:300px; margin-left:0px; float:left "
+                id="aboutimg"
               />
               <p></p>
 
@@ -328,6 +330,7 @@
           ><button id="edemail">
             <span class="glyphicon glyphicon-pencil"></span>
           </button>
+          <p id="test"></p>
         </div>
       </div>
     </div>
@@ -378,6 +381,20 @@
       function closeForm() {
         document.getElementById("myForm").style.display = "none";
       }
+
+      $("#files").change(function() {
+        var reader = new FileReader();
+
+        reader.onload = function(e) {
+          // get loaded data and render thumbnail.
+          document.getElementById("aboutimg").src = e.target.result;
+        };
+
+        // read the image file as a data URL.
+        reader.readAsDataURL(this.files[0]);
+
+        console.log("Success");
+      });
     </script>
   </body>
 </html>
