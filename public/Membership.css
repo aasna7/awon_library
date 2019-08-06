@@ -1,0 +1,84 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: "Montserrat",sans-serif;
+}
+
+
+.membership{
+    width:650px;
+    height:800px;
+    /*background:url(st.jpg);*/
+    background-color:#7691bc;
+    
+    position:absolute;
+    top:20%;
+    left:30%;
+    /*transform:translate(-0%,-50%);*/
+    color:white;
+    text-align:center;
+    border:solid;
+    border-color:hsl(240, 78%, 2%);
+    
+}
+.membership h1{
+    font-size:30px;
+    margin-top:60px;
+    margin-bottom:60px;
+    color:black;
+    font-weight:bold;
+}
+.tbox{
+width:260px;
+height:40px;
+background:white;
+border-radius:10px;
+border-color:black;
+margin:20px auto;
+
+}
+.tbox input{
+    background:none;
+    border:none;
+    outline:none;
+    text-align:center;
+    width:90%;
+    line-height:37px;
+    font-family:"Montserrat",sans-serif;
+    font-size:14px;
+    color:black;
+    }
+
+    .box select{
+        width:260px;
+        height:40px;
+        background:white;
+        color:black;
+        text-align: center;
+        text-align-last: center;
+        border-radius:10px;
+        margin:5px auto; 
+    }
+
+    .radiobtn {
+       display: inline;
+       padding-top:50px;
+       padding-right: 20px;
+       margin-left:40px;
+       
+       color:black;
+    }
+
+.btn{
+width:150px;
+height:40px;
+background:hsl(128, 94%, 27%);
+border-radius:10px;
+margin:16px auto;
+display:block;
+font-family:"Montserrat",sans-serif;
+font-size:16px;
+border:none;
+color:white;
+cursor:pointer;
+}

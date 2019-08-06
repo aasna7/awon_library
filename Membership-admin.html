@@ -19,6 +19,7 @@
       type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/froala-editor@3.0.0/js/froala_editor.pkgd.min.js"
     ></script>
+    <script src="membershipadmin.js"></script>
     <style>
       .container {
         padding: 130px 20px;
@@ -229,7 +230,7 @@
       </div>
     </nav>
 
-    <div class="container"></div>
+    <div class="container" id="list-member"></div>
 
     <div class="form-popup" id="myForm">
       <form align="center" class="form-container">
@@ -247,25 +248,5 @@
         <button id="close" onclick="closeForm()">Close</button>
       </form>
     </div>
-
-    <script>
-      function openForm() {
-        document.getElementById("myForm").style.display = "block";
-      }
-
-      function closeForm() {
-        document.getElementById("myForm").style.display = "none";
-      }
-
-      function memberlist() {
-        var para = document.createElement("p");
-        var name = document.createElement("label");
-        var approve = document.createElement("button");
-        var decline = document.createElement("button");
-        para.append(name);
-        para.append(approve);
-        para.append(decline);
-      }
-    </script>
   </body>
 </html>
